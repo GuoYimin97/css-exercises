@@ -24,3 +24,58 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+
+/* my solution starts here */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0; padding: 0;
+}
+
+.left-links, .right-links {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+}
+
+.header, .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* space-between works, it's the margin that I had to adjust */
+  margin: 0; 
+  padding: 14px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons {
+  margin-top: 6px;
+}
+
+button {
+  padding: 10px;
+}
